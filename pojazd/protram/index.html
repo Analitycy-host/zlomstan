@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <noscript>
+			<meta http-equiv="refresh" content="0;url=..../noscript">
+	</noscript>
+    <title>ZłomStan - Protram</title>
+    <style>
+        html {scroll-behavior: smooth;}
+        body{
+            background-color: #fbfbfb;
+        }
+        .container{
+            background-color: white;
+            font-family: trebuchet ms,geneva ce,lucida,sans-serif;
+            
+        }
+        .content{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ul, #myUL {
+          list-style-type: none;
+        }
+        
+        #myUL {
+          margin: 0;
+          padding: 0;
+        }
+        
+        .caret {
+          cursor: pointer;
+          -webkit-user-select: none; /* Safari 3.1+ */
+          -moz-user-select: none; /* Firefox 2+ */
+          -ms-user-select: none; /* IE 10+ */
+          user-select: none;
+        }
+        
+        .caret::before {
+          content: "\25B6";
+          color: black;
+          display: inline-block;
+          margin-right: 6px;
+        }
+        
+        .caret-down::before {
+          -ms-transform: rotate(90deg); /* IE 9 */
+          -webkit-transform: rotate(90deg); /* Safari */
+          transform: rotate(90deg);  
+        }
+        
+        .nested {
+          display: none;
+        }
+        
+        .active {
+          display: block;
+        }
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <p style="text-align: center;">Protram</p>
+            <hr>
+            <div style="margin-top: 100px;margin-bottom: 100px;">
+            <p style="text-align: center;">Tabor tramwajowy eksploatowany w Polsce</p>
+            <table style="justify-content: center;margin-left: auto;margin-right: auto; width: 94%;text-align: center;">
+                <tr>
+                    <th style="width: auto;">Zdjęcie</th><th style="width: 100%">Producent</th><th>Modernizacja</th><th>Uwagi</th><th style="width: 5%;">Seria</th><th style="width: 5%;">Pojazdy</th><th style="width: 5%;">Zdjęcia</th>
+                </tr>
+                <tr>
+                    <td><img style="margin-top: 5px;margin-bottom: 5px;margin-left: 5px;margin-right: 5px" width="105px" height="60px" src="https://cdn.analitycy.stream/analitycy/img/survival.webp"></td><td>Konstal<br><span style="font-size: 70%;">Modernizacja wagonu 105N</span></td><td>Protram</td><td></td><td><a title="Zobacz pojazdy serii" href="./105N/">105N</a></td><td>todo</td><td><span id="photo"></td>
+                </tr>
+                <tr>
+                    <td><img style="margin-top: 5px;margin-bottom: 5px;margin-left: 5px;margin-right: 5px" width="105px" height="60px" src="https://cdn.analitycy.stream/analitycy/img/survival.webp"></td><td>Konstal<br><span style="font-size: 70%;">Troje drzwi odskokowych, przetwornica statyczna, nowe wnętrze i aparatura</span></td><td>Protram</td><td></td><td><a title="Zobacz pojazdy serii" href="./105Na/">105NWr</a></td><td>todo</td><td><span id="photo"></td>
+                </tr>
+                <tr>
+                    <td><img style="margin-top: 5px;margin-bottom: 5px;margin-left: 5px;margin-right: 5px" width="105px" height="60px" src="https://cdn.analitycy.stream/analitycy/img/survival.webp"></td><td>Protram<br><span style="font-size: 70%;">Doczepy czynne do tramwajów Alstom Konstal 105N2k/2000 dla Szczecina.</span></td><td></td><td></td><td><a title="Zobacz pojazdy serii" href="./105N2k2000/">105N2k/2000</a></td><td>6</td><td><span id="photo"></td>
+                </tr>
+                <tr>
+                    <td><img style="margin-top: 5px;margin-bottom: 5px;margin-left: 5px;margin-right: 5px" width="105px" height="60px" src="https://cdn.analitycy.stream/analitycy/img/survival.webp"></td><td>Protram<br><span style="font-size: 70%;">Wagony jednoczłonowe wysokopodłogowe</span></td><td></td><td></td><td><a title="Zobacz pojazdy serii" href="./204WrAs/">204WrAs</a></td><td>2x6</td><td><span id="photo"></td>
+                </tr>
+                <tr>
+                    <td><img style="margin-top: 5px;margin-bottom: 5px;margin-left: 5px;margin-right: 5px" width="105px" height="60px" src="https://cdn.analitycy.stream/analitycy/img/survival.webp"></td><td>Protram<br><span style="font-size: 70%;">Trójczłonowe w 20% niskopodłogowe tramwaje dla Wrocławia</span></td><td></td><td></td><td><a title="Zobacz pojazdy serii" href="./205WrAs/">205WrAs</a></td><td>27</td><td><span id="photo"></td>
+                </tr>
+                <tr>
+                    <td><img style="margin-top: 5px;margin-bottom: 5px;margin-left: 5px;margin-right: 5px" width="105px" height="60px" src="https://cdn.analitycy.stream/analitycy/img/survival.webp"></td><td>Protram<br><span style="font-size: 70%;">Tramwaj powstały z połączenia trzech wagonów 105Na dwoma członami niskopodłogowymi, pięcioczłonowy, w 25% niskopodłogowy prototyp tramwaju dla Krakowa.</span></td><td></td><td></td><td><a title="Zobacz pojazdy serii" href="./405N/">405N</a></td><td>1</td><td><span id="photo"></td>
+                </tr>
+            </table>
+            <p style="text-align: center;"><button>Dodaj Pojazd</button><button>Edytuj</button></p>
+            </div>
+            <hr>
+            <div id="footer" style="text-align: center;">
+                Złomstan &copy; <script>document.write(new Date().getFullYear())</script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
